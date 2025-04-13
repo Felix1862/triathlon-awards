@@ -28,25 +28,25 @@ triathlon_qualifying_time = 100
 
 # Indicate the time in minutes
 swimming_event = int(input("Please input swimming event times in minutes here: \n"))
-print("{} minutes in the swimming event.".format (swimming_event))
+print("{} minutes in the swimming event.".format(swimming_event))
 cycling_event = int(input("Please input cycling event times in minutes here: \n"))
-print("{} minutes in the cycling event.".format (cycling_event))
+print("{} minutes in the cycling event.".format(cycling_event))
 running_event = int(input("Please input running event times in minutes here: \n"))
-print("{} minutes in the running event.".format (running_event))
+print("{} minutes in the running event.".format(running_event))
 
 # Set qualifying time
 triathlon_qualifying_time = 100
 
 # Time of the triathlete on completion
 triathlon_athlete_time = int(swimming_event + cycling_event + running_event)
-print("Total time, {} minutes to complete the triathlon event.".format (triathlon_athlete_time))
+print("Total time, {} minutes to complete the triathlon event.".format(triathlon_athlete_time))
 
 # Award given based on qualifying time
 if triathlon_athlete_time <= triathlon_qualifying_time:
     print("You are within the qualifying time and awarded the Provincial Colours.")
 elif (triathlon_athlete_time >= 100) and (triathlon_athlete_time <= 105):
     print("You are awarded the Provincial Half Colours.")
-elif (triathlon_athlete_time >=105 and (triathlon_athlete_time <= 110)):
+elif (triathlon_athlete_time >= 105 and (triathlon_athlete_time <= 110)):
     print("You are awarded the Provincial Scroll.")
 elif triathlon_athlete_time > 110:
     print("Unfortunately you have not qualified, No Award will be given.")
