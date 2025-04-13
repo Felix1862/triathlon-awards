@@ -27,6 +27,7 @@ triathlon_qualifying_time = 100
 # no_award = more than 10 minutes within the qualifying time
 
 # Indicate the time in minutes
+# Ask the user for times.
 swimming_event = int(input("Please input swimming event times in minutes here: \n"))
 print("{} minutes in the swimming event.".format(swimming_event))
 cycling_event = int(input("Please input cycling event times in minutes here: \n"))
@@ -35,9 +36,8 @@ running_event = int(input("Please input running event times in minutes here: \n"
 print("{} minutes in the running event.".format(running_event))
 
 # Set qualifying time
+# Calculate total time.
 triathlon_qualifying_time = 100
-
-# Time of the triathlete on completion
 triathlon_athlete_time = int(swimming_event + cycling_event + running_event)
 print("Total time, {} minutes to complete the triathlon event.".format(triathlon_athlete_time))
 
@@ -46,6 +46,7 @@ HALF_COLOURS = 105
 SCROLL = 110
 
 # Award given based on qualifying time
+# Determine thresholds
 if triathlon_athlete_time <= PROVINCIAL_COLOURS:
     print("You are within the qualifying time and awarded the Provincial Colours.")
 elif triathlon_athlete_time <= HALF_COLOURS:
