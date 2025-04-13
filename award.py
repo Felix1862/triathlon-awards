@@ -34,6 +34,9 @@ print("{} minutes in the cycling event.".format (cycling_event))
 running_event = int(input("Please input running event times in minutes here: \n"))
 print("{} minutes in the running event.".format (running_event))
 
+# Set qualifying time
+triathlon_qualifying_time = 100
+
 # Time of the triathlete on completion
 triathlon_athlete_time = int(swimming_event + cycling_event + running_event)
 print("Total time, {} minutes to complete the triathlon event.".format (triathlon_athlete_time))
