@@ -37,13 +37,14 @@ print("{} minutes in the running event.".format(running_event))
 # Set qualifying time
 triathlon_qualifying_time = 100
 
+PROVINCIAL_COLOURS = 100
+HALF_COLOURS = 105
+SCROLL = 110
+
 # Time of the triathlete on completion
 triathlon_athlete_time = int(swimming_event + cycling_event + running_event)
 print("Total time, {} minutes to complete the triathlon event.".format(triathlon_athlete_time))
 
-PROVINCIAL_COLOURS = 100
-HALF_COLOURS = 105
-SCROLL = 110
 
 # Award given based on qualifying time
 if triathlon_athlete_time <= PROVINCIAL_COLOURS:
