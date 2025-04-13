@@ -41,12 +41,16 @@ triathlon_qualifying_time = 100
 triathlon_athlete_time = int(swimming_event + cycling_event + running_event)
 print("Total time, {} minutes to complete the triathlon event.".format(triathlon_athlete_time))
 
+PROVINCIAL_COLOURS = 100
+HALF_COLOURS = 105
+SCROLL = 110
+
 # Award given based on qualifying time
-if triathlon_athlete_time <= triathlon_qualifying_time:
+if triathlon_athlete_time <= PROVINCIAL_COLOURS:
     print("You are within the qualifying time and awarded the Provincial Colours.")
-elif (triathlon_athlete_time >= 100) and (triathlon_athlete_time <= 105):
+elif triathlon_athlete_time <= HALF_COLOURS:
     print("You are awarded the Provincial Half Colours.")
-elif (triathlon_athlete_time >= 105 and (triathlon_athlete_time <= 110)):
+elif triathlon_athlete_time <= SCROLL:
     print("You are awarded the Provincial Scroll.")
-elif triathlon_athlete_time > 110:
+else:
     print("Unfortunately you have not qualified, No Award will be given.")
